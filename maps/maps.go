@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"maps"
 )
 
 func main() {
@@ -24,4 +25,15 @@ func main() {
 
 	clear(m)
 	fmt.Println("map:", m)
+
+	_, prs := m["k1"]
+
+	fmt.Println("Present", prs)
+
+	n := map[string]int{"k1": 4, "k2": 5}
+	n2 := map[string]int{"k1": 4, "k2": 5}
+
+	if maps.Equal(n, n2) {
+		fmt.Println("n==n2")
+	}
 }
