@@ -16,9 +16,6 @@ func main() {
 	fmt.Println(nextInt())
 	fmt.Println(nextInt())
 	fmt.Println(nextInt())
-
-	newInts := intSeq()
-
-	fmt.Println(newInts())
-
+	newInt := intSeq()
+	fmt.Println(newInt())
 }
